@@ -6,6 +6,13 @@ import (
 	"path/filepath"
 )
 
+var (
+	//LayoutDir is the directory of Layouts used in View
+	LayoutDir = "views/layouts/"
+	//FileExt is the file type we want to include
+	FileExt = ".gohtml"
+)
+
 //NewView returns a View with the necessary templates
 func NewView(files ...string) *View {
 
@@ -32,7 +39,7 @@ func (v View) Render(w http.ResponseWriter, data interface{}) error {
 
 func fetchLayouts() []string {
 
-	files, err := filepath.Glob("views/layouts/*.gohtml")
+	files, err := filepath.Glob(LayoutDir + "*" + FileExt)
 	if err != nil {
 		panic(err)
 	}
