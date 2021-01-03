@@ -12,21 +12,19 @@ import (
 var homeView *views.View
 
 func main() {
-	fmt.Println("Hello, world")
 	homeView = views.NewView("views/home.gohtml")
 
 	r := mux.NewRouter()
 
 	r.HandleFunc("/", home)
+	fmt.Println("Listening on port 3000")
 	http.ListenAndServe(":3000", r)
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
-	Test := "Testing data sharing"
-
-	if err := homeView.Template.Execute(w, Test); err != nil {
+	if err := homeView.Render(w, nil); err != nil {
 		panic(err)
 	}
 }
