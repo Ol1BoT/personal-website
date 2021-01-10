@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400px;
+    line-height: 1.7;
+    padding: 30px;
+    color: #777;
+    max-width: 95rem;
+    margin: 0px auto;
+}
+
+.header {
+    height: 90vh;
+    /* background-image: linear-gradient(to right, rgba(83, 83, 83, 0.7),rgba(71, 44, 4, 0.7)) ,url(../img/sh_vines_sunset.jpg); */
+    background-image: linear-gradient(to right, rgba(00, 32, 63, 0.7), rgba(00, 32, 63, 0.7)), url(../img/sh_vines_sunset.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 0 100%, 100% 70vh, 100% 0);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    line-height: 1.3;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
+
+/* .row {
+    max-width: 114rem;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+.col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+    float: left;
+}
+
+.col-1-of-3:not(:last-child) {
+    margin-right: 6rem;
+} */
+
+.my-interests {
+    background-color: rgb(243, 243, 243);
+    padding: 13rem 0 20rem 0;
+    margin-top: -15rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.my-interest {
+    margin-top: 30px;
+    /* background-color: red; */
+    width: 32rem;
+}
+
+
+.my-interests-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.interest-icon {
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.interest-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.interest-content {
+    text-align: center;
+}
+
+
+
+
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-56 {
+    font-size: 56px;
+}
